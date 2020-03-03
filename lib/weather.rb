@@ -1,2 +1,6 @@
-# Designed to pull data from weather site.
-puts "Hello"
+require_relative "./weather/version"
+require_relative "weather/cli"
+
+module Weather
+    class Error < StandardError; end
+end
