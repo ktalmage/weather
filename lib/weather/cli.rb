@@ -1,12 +1,16 @@
-
+#CLI Controller
 class Weather::CLI
 
     def call 
-        puts 'Welcome to My Weather!'
-        # get_location
-        # get_forecast_type(zip)
-        # show_locations
-        
-
+        puts 'Welcome to My Weather!' 
+        puts "Please enter your location:"
+        input = gets.strip
+        puts "Your location is #{input}"        
     end
-end
+end         
+    
+
+    
+
+        
+      
