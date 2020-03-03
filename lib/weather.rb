@@ -1,6 +1,2 @@
-require "weather/version"
-
-module Weather
-  class Error < StandardError; end
-  # Your code goes here...
-end
+# Designed to pull data from weather site.
+puts "Hello"
