@@ -19,9 +19,14 @@ class Weather::CLI
         # iterates through array of locations
         puts "Please enter your location:"
         selected_location = gets.strip
-        binding.pry
+        # if valid_input(selected_location,@locations)
+            # returns puts "You've selected city_name, state. 
+            #              "Please select the weather information you would like from the following options: 
+                # and returns either: 1) Current weather 2) Tomorrow's weather 3) 5 day forecast
+            #else 
+                # "Please enter a zip code for a US city"
         end
-    # end
+     end
 
 
 end         
