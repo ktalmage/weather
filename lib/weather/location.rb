@@ -1,4 +1,4 @@
-class Weather::City
+class Weather::Location
 
 attr_accessor :city_name, :state, :zip
 
@@ -16,7 +16,7 @@ attr_accessor :city_name, :state, :zip
     end
 end
 
-city_1 = Weather::City.new("Astoria","11105")
+city_1 = Weather::Location.new("Astoria","11105")
 
 puts city_1.city_name
 
