@@ -16,19 +16,26 @@ class Weather::CLI
     end
 
     def get_user_location
-        # iterates through array of locations
+        # Prompts user for input
         puts "Please enter your location:"
         selected_location = gets.strip
-        # if valid_input(selected_location,@locations)
-            # returns puts "You've selected city_name, state. 
-            #              "Please select the weather information you would like from the following options: 
-                # and returns either: 1) Current weather 2) Tomorrow's weather 3) 5 day forecast
-            #else 
-                # "Please enter a zip code for a US city"
+        
+         if valid_input(selected_location,@locations)
+              puts "You've selected city_name, state." 
+                   "Please select the weather information you would like from the following options:"
+                   "1) Current weather"
+                   "2) Tomorrow's weather"
+                   "3) 5 day forecast"
+         else
+              puts "please enter a valid US zip code"
+                
         end
-     end
+    end
+     
 
-
+    def valid_input(input,data)
+         input.to_i <= data.length  && input.to_i > 0
+    end
 end         
     
 

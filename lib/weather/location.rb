@@ -1,24 +1,29 @@
 class Weather::Location
 
-attr_accessor :city_name, :state, :zip
+attr_accessor :city_name, :state, :zip, :url
 
-    # @@all = []
-
-    def initialize(city_name,zip) # I want this to instantiate a location based on the user input
+    def self.data
         
-        @city_name = city_name
-        @zip = zip
-        @state = state
+        self.retrieve_data
     end
 
-    def self.all
-        @@all
+    def self.retrieve_data
+        
+       location_data = []
+       
+       location_data << self.pull_weather
+       # I want this to go to api website, extract attributes, instantiate a location based on the user input
+    
+       location_data
     end
 
-
+    def self.pull_weather
+    
+    end
+ 
 end
 
-city_1 = Weather::Location.new("Astoria","11105")
+
 
 
 

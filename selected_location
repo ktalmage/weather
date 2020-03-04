@@ -1,0 +1,19 @@
+
+[1mFrom:[0m /home/ktalmage/weather/lib/weather/cli.rb @ line 22 Weather::CLI#get_user_location:
+
+    [1;34m18[0m: [32mdef[0m [1;34mget_user_location[0m
+    [1;34m19[0m:     [1;34m# Prompts user for input[0m
+    [1;34m20[0m:     puts [31m[1;31m"[0m[31mPlease enter your location:[1;31m"[0m[31m[0m
+    [1;34m21[0m:     selected_location = gets.strip
+ => [1;34m22[0m:     binding.pry
+    [1;34m23[0m:     [32mif[0m valid_input(selected_location,@locations)
+    [1;34m24[0m:          puts [31m[1;31m"[0m[31mYou've selected city_name, state.[1;31m"[0m[31m[0m 
+    [1;34m25[0m:               [31m[1;31m"[0m[31mPlease select the weather information you would like from the following options:[1;31m"[0m[31m[0m
+    [1;34m26[0m:               [31m[1;31m"[0m[31m1) Current weather[1;31m"[0m[31m[0m
+    [1;34m27[0m:               [31m[1;31m"[0m[31m2) Tomorrow's weather[1;31m"[0m[31m[0m
+    [1;34m28[0m:               [31m[1;31m"[0m[31m3) 5 day forecast[1;31m"[0m[31m[0m
+    [1;34m29[0m:         [1;34m#else [0m
+    [1;34m30[0m:             [1;34m# "Please enter a zip code for a US city"[0m
+    [1;34m31[0m:         [32mend[0m
+    [1;34m32[0m:     [32mend[0m
+
