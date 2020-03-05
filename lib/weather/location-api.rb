@@ -13,14 +13,12 @@ require_relative 'location'
 #     k.select {|k,_| keys_to_extract.include? k}
 # end
    
+# resp = RestClient.get("http://api.openweathermap.org/data/2.5/find?lat=40.7128&lon=-74.0060&cnt=20&units=imperial&APPID=cdf9cc554cd1d376b2dbcf0dd7bcf3f6")
+# resp_hash = JSON.parse(resp.body, symbolize_names:true)
+# weather_array = resp_hash[:list]
+
+# puts weather_array.collect.with_index(1) {|name,i| "#{i}. #{name[:name]}"}
 
 
-resp = RestClient.get("http://api.openweathermap.org/data/2.5/find?lat=40.7128&lon=-74.0060&cnt=50&units=imperial&APPID=cdf9cc554cd1d376b2dbcf0dd7bcf3f6")
-resp_hash = JSON.parse(resp.body, symbolize_names:true)
-weather_array = resp_hash[:list]
-
-puts weather_array.collect {|name| "#{name[:name]}"}
-
-binding.pry
 
 
