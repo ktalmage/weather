@@ -35,10 +35,7 @@ end
 
    
 
-# resp_hash = JSON.parse(resp.body, symbolize_names:true)
-# weather_array = resp_hash[:list]
 
-# puts weather_array.collect.with_index(1) {|name,i| "#{i}. #{name[:name]}"}
 
 
 
