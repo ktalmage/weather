@@ -1,6 +1,6 @@
 # Weather
 
-Welcome to your Weather! The purpose of this program is to let users enter their location and be able to retrieve weather information for a US city. You can choose from current weather,tomorrow's weather or a five day forecast. In addition, you will receive recommendations on how you should dress for that day based on the temperature.
+Welcome to  Weather! The purpose of this program is to let users enter their location and be able to retrieve weather information for a US city. You can choose from current weather,tomorrow's weather or a five day forecast. In addition, you will receive recommendations on how you should dress for that day based on the temperature.
 
 In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/weather`. To experiment with that code, run `bin/console` for an interactive prompt.
 

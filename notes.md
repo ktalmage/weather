@@ -1,7 +1,6 @@
 #Objective of this CLI: 
 
-#Allow users to input location information and return different weather data based on those locations. There will also be conditional information presented to the user
-#based on the temperature and other potential attributes of the weather data (UV index, intraday temperature, etc if possible)
+#Allow users to input location information and return different weather data based on those locations. This CLI is designed to provide hyperlocal weather to you.
 
 
 
