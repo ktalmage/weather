@@ -24,8 +24,7 @@ Or install it yourself as:
 
 ## Usage
 
-To use this program, please enter a US Zip code. Then you will be prompted to enter the information you would like : 1) current weather 2) tomorrow's weather or
-3) a 5 day forecaset. 
+To use this program, please select a city from the list. From there you can view different weather attributes for your city like: weather, temperature and wind speed.
 
 ## Development
 

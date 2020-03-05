@@ -24,7 +24,7 @@
       
 def list_locations
      
-    binding.pry
+    
      puts weather_array.collect.with_index(1) {|name,i| "#{i}. #{name[:name]}"}
     
     end
