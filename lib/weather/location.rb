@@ -1,12 +1,12 @@
 class Weather::Location
 
 #location has : name, temp, weather, coord
-
-attr_accessor :name
+            
+attr_accessor :name, :temp, :feels_like, :temp_min, :temp_max, :humidity, :wind_speed
 
      @@all = []    
 
-     def initalize(name)
+     def initialize(name)
          @name = name
          @@all << self
      end
