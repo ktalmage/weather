@@ -8,20 +8,19 @@
         menu
     end
             
-
     def list_locations
-     Weather::API.get_locations.select.with_index {|name,i| puts "#{i + 1}. #{name[:name]}"}
+        Weather::API.get_locations.each_with_index {|name,i| puts "#{i + 1}. #{name[:name]}"}
     end
 
     def menu
-
         input = "" 
         while input != "N" 
-            puts "Please select a number from the list above:"
+            puts "\nPlease select a number from the list above:\n"
             input = gets.strip
                 
             if input.to_i - 1 <= Weather::Location.all.size
                 condition = Weather::Location.all[input.to_i - 1]
+                
                 puts "The current weather conditions for #{condition.name} are:
                 Current Temperature: #{condition.temp}F
                 Feels like: #{condition.feels_like}F
@@ -30,11 +29,13 @@
                 Humidity: #{condition.humidity}%
                 Wind Speed: #{condition.wind_speed} mph"
             
-            puts "\nWould you like information from other cities(Y/N)?\n"
-            answer = gets.strip
+                puts "\nWould you like information from other cities(Y/N)?\n"
+                answer = gets.strip
+            
             if answer == "N"
                 puts "Goodbye"
                         break
+                    
                     end
                 end
             end
