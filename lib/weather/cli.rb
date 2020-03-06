@@ -25,7 +25,7 @@
                 Current Temperature: #{condition.temp}F
                 Feels like: #{condition.feels_like}F
                 Minimum Temperature: #{condition.temp_min}F
-                Maxium Temperarue: #{condition.temp_min}F
+                Maxium Temperature: #{condition.temp_max}F
                 Humidity: #{condition.humidity}%
                 Wind Speed: #{condition.wind_speed} mph"
             
@@ -35,7 +35,6 @@
             if answer == "N"
                 puts "Goodbye"
                         break
-                    
                     end
                 end
             end

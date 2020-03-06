@@ -1,6 +1,6 @@
 # Weather
 
-Welcome to Local Weather! The purpose of this program is to let users enter a location to obtain hyperlocal data for the current time.This CLI is designed to provide hyperlocal weather to you (for purposes of this project I've used the NYC surrounding area).
+Welcome to Local Weather! The purpose of this program is to let users enter a location to obtain hyperlocal data for the current time (for purposes of this project I've used the NYC surrounding area).
 
 In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/weather`. To experiment with that code, run `bin/console` for an interactive prompt.
 
