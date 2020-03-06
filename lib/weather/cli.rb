@@ -16,10 +16,10 @@
     def menu
 
         input = "" 
-        
-        while input != "exit"
-        puts "\nPlease select the number of a city to receive weather:\n"
-           input = gets.strip
+        while input != "N" 
+            puts "Please select a number from the list above:"
+            input = gets.strip
+                
             if input.to_i - 1 <= Weather::Location.all.size
                 condition = Weather::Location.all[input.to_i - 1]
                 puts "The current weather conditions for #{condition.name} are:
@@ -30,17 +30,17 @@
                 Humidity: #{condition.humidity}%
                 Wind Speed: #{condition.wind_speed} mph"
             
-            puts "To exit this program please type exit or select another number to continue:"
-            input = gets.strip
-            if input.to_i - 1 > Weather::Location.all.size 
-                puts "Please enter a VALID number from the list above."
+            puts "\nWould you like information from other cities(Y/N)?\n"
+            answer = gets.strip
+            if answer == "N"
+                puts "Goodbye"
+                        break
+                    end
                 end
-            end 
+            end
         end
     end
-end
-    
-            
+           
 
 
   
