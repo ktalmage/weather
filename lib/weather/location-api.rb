@@ -2,7 +2,6 @@ require 'pry'
 require 'rest-client'
 require 'json'
 require_relative 'location'
-
 class Weather::API 
     
 

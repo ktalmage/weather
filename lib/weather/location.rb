@@ -38,10 +38,6 @@ attr_accessor :name, :temp, :feels_like, :temp_min, :temp_max, :humidity, :wind_
     def self.wind_speed
         @wind_speed
     end
-     
-    
-
-    
 end
 
 
