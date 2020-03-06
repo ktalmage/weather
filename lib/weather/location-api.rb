@@ -25,6 +25,7 @@ class Weather::API
             location.humidity = humidity
             location.wind_speed = wind_speed
             
+            
         end
     end
  end
