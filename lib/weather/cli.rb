@@ -18,7 +18,7 @@
             puts "\nPlease select a number from the list above:\n"
             input = gets.strip
                 
-            if input.to_i - 1 <= Weather::Location.all.size
+            if input.to_i - 1 <= Weather::Location.all.size  && input.to_i > 0
                 condition = Weather::Location.all[input.to_i - 1]
                 
                 puts "The current weather conditions for #{condition.name} are:
@@ -28,7 +28,7 @@
                 Maxium Temperature: #{condition.temp_max}F
                 Humidity: #{condition.humidity}%
                 Wind Speed: #{condition.wind_speed} mph"
-            
+               
                 puts "\nWould you like information from other cities(Y/N)?\n"
                 answer = gets.strip
             
