@@ -17,6 +17,7 @@ attr_accessor :name, :temp, :feels_like, :temp_min, :temp_max, :humidity, :wind_
     def self.warmer_than(temp)
         self.all.select do |location| 
         location.temp > temp
+        
         end
     end
 end   

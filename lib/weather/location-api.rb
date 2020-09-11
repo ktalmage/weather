@@ -8,7 +8,7 @@ class Weather::API
     def self.get_locations
         resp = RestClient.get("http://api.openweathermap.org/data/2.5/find?lat=40.7128&lon=-74.0060&cnt=20&units=imperial&APPID=cdf9cc554cd1d376b2dbcf0dd7bcf3f6")
         resp_hash = JSON.parse(resp.body, symbolize_names:true)
-        binding.pry
+        
         location_array = resp_hash[:list]
         location_array.each do |city|
             name = city[:name]
