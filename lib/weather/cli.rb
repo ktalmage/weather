@@ -1,5 +1,5 @@
 # #CLI Controller
- require 'pry'
+ 
  class Weather::CLI
 
     def call 
@@ -18,17 +18,17 @@
             puts "\nPlease select a number from the list above:\n"
             input = gets.strip
                 
-            if input.to_i - 1 <= Weather::Location.all.size  && input.to_i > 0
+            if input.to_i <= Weather::Location.all.size  && input.to_i > 0
                 condition = Weather::Location.all[input.to_i - 1]
                 
                 puts "The current weather conditions for #{condition.name} are:
                 Current Temperature: #{condition.temp}F
                 Feels like: #{condition.feels_like}F
                 Minimum Temperature: #{condition.temp_min}F
-                Maxium Temperature: #{condition.temp_max}F
+                Maximum Temperature: #{condition.temp_max}F
                 Humidity: #{condition.humidity}%
-                Wind Speed: #{condition.wind_speed} mph"
-               
+                Wind Speed: #{condition.wind_speed} mph
+                Warmer Than: #{condition.warmer_than} F"
                 puts "\nWould you like information from other cities(Y/N)?\n"
                 answer = gets.strip
             
