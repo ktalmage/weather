@@ -32,7 +32,7 @@
                 puts "\nWould you like information from other cities(Y/N)?\n"
                 answer = gets.strip
             
-            if answer == "N".downcase
+            if answer == "N".downcase || "N".upcase
                 puts "Goodbye"
                         break
                     end
